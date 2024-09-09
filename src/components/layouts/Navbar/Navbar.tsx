@@ -7,7 +7,7 @@ import Logo from '@/assets/svg/logo.svg';
 
 export default function Navbar() {
   return (
-    <nav className="bg-background flex items-center justify-center p-6 sticky top-0 z-50">
+    <nav className="bg-background flex items-center justify-center p-6 sticky top-0 z-50 shadow-sm">
       <Link href="/">
         <Image src={Logo} alt="Logo Perintis Timbangan Indonesia" className="w-full h-full" />
       </Link>
