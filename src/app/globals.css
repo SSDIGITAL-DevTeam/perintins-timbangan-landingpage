@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply bg-background;
+  }
   body {
     @apply font-body;
   }

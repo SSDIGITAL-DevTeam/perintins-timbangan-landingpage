@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
 import './globals.css';
+import Navbar from '@/components/layouts/Navbar/Navbar';
 
 export const metadata: Metadata = {
   title: 'Perintis Timbangan',
@@ -15,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Navbar />
         <main className="flex flex-col min-h-screen">{children}</main>
       </body>
     </html>

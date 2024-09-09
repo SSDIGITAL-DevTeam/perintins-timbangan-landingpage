@@ -13,6 +13,17 @@ const config: Config = {
         secondary: '#B10903',
         tertiary: '#FFFAF1',
       },
+      container: {
+        center: true,
+        padding: '1.5rem',
+        screens: {
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1240px',
+          '2xl': '1400px',
+        },
+      },
     },
   },
   plugins: [],
