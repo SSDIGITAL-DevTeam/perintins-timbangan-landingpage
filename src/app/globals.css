@@ -11,4 +11,25 @@
   body {
     @apply font-body;
   }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #b10903;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #e2e8f0;
+  }
+
+  ::selection {
+    background-color: #b10903;
+    color: #fff;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #b10903 #e2e8f0;
+  }
 }
