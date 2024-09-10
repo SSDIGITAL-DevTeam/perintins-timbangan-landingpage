@@ -138,7 +138,7 @@ export default function Home() {
 
       {/* cta */}
       <section className="flex flex-col py-[50px] px-[2rem] overflow-x-hidden">
-        <div className="flex flex-col lg:flex-row gap-y-10 gap-x-0 lg:gap-y-0 lg:gap-x-20 container justify-center items-center">
+        <div className="flex flex-col md:flex-row gap-y-10 gap-x-0 lg:gap-y-0 md:gap-x-10 lg:gap-x-20 container justify-center items-center">
           <Link href="https://www.perintistimbanganindonesia.co.id/" className="bg-primary px-12 py-5 text-white rounded-full hover:bg-secondary transition-colors duration-300">
             Kunjungi Toko Kami
           </Link>
@@ -155,17 +155,18 @@ export default function Home() {
       </section>
 
       {/* Gmaps */}
-      <section className="flex flex-col py-[50px] px-[2rem] overflow-x-hidden">
-        <div className="flex flex-col rounded-xl p-10 container justify-center items-center w-full">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3981.930176217754!2d98.6725369!3d3.603463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131ebd98c1b81%3A0x6fb6535e7bfde585!2sPUSAT%20TIMBANGAN%20DIGITAL%20%26%20MANUAL%20-%20Eceran%20%26%20Grosir%20-%20SCALEINDO%20(PT.PERINTIS%20TIMBANGAN%20INDONESIA)!5e0!3m2!1sid!2sid!4v1725911386981!5m2!1sid!2sid"
-            width="1284"
-            height="658"
-            style={{ border: 0 }}
-            allowFullScreen={true}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+      <section className="flex flex-col py-10 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
+        <div className="w-full max-w-7xl mx-auto">
+          <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3981.930176217754!2d98.6725369!3d3.603463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131ebd98c1b81%3A0x6fb6535e7bfde585!2sPUSAT%20TIMBANGAN%20DIGITAL%20%26%20MANUAL%20-%20Eceran%20%26%20Grosir%20-%20SCALEINDO%20(PT.PERINTIS%20TIMBANGAN%20INDONESIA)!5e0!3m2!1sid!2sid!4v1725911386981!5m2!1sid!2sid"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>

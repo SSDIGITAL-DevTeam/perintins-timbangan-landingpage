@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '@/components/layouts/Navbar/Navbar';
+import FooterUI from '@/components/layouts/Footer/FooterUI';
+import Whatsapp from '@/components/partials/Whatsapp/Whatsapp';
 
 export const metadata: Metadata = {
   title: 'Perintis Timbangan',
@@ -16,7 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
+        <Whatsapp />
         <main className="flex flex-col min-h-screen overflow-x-hidden">{children}</main>
+        <FooterUI />
       </body>
     </html>
   );
