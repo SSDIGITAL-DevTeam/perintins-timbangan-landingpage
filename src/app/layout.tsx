@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '@/components/layouts/Navbar/Navbar';
 import FooterUI from '@/components/layouts/Footer/FooterUI';
 import Whatsapp from '@/components/partials/Whatsapp/Whatsapp';
+import FlyButton from '@/components/partials/FlyButton/FlyButton';
 
 export const metadata: Metadata = {
   title: 'Perintis Timbangan Indonesia',
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <Whatsapp />
+        <FlyButton />
         <main className="flex flex-col min-h-screen overflow-x-hidden">{children}</main>
         <FooterUI />
       </body>
