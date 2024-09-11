@@ -58,6 +58,11 @@ const config: Config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'slide-up': 'slide-up 0.3s ease-out',
       },
+      transitionProperty: {
+        height: 'height',
+        spacing: 'margin, padding',
+        all: 'all',
+      },
     },
   },
   plugins: [require('tailwindcss-animate'), require('@tailwindcss/aspect-ratio')],

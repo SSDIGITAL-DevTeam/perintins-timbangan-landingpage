@@ -24,7 +24,7 @@ export default function FlyButton(): JSX.Element {
     <>
       {isVisible && (
         <div className="fixed bottom-2 left-0 right-0 flex justify-center items-center p-4 transition-transform duration-300 transform translate-y-0 animate-slide-up z-50">
-          <div className="bg-white rounded-full shadow-lg overflow-hidden px-4 py-3">
+          <div className="bg-white rounded-full shadow-lg overflow-hidden px-4 py-3 hidden md:block">
             <Link href="https://www.perintistimbanganindonesia.co.id" className="block px-6 py-3 bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-300 rounded-full">
               Kunjungi Toko Kami
             </Link>
