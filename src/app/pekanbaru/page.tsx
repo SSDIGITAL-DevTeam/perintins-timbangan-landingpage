@@ -216,11 +216,11 @@ export default function Home() {
       <section className="flex flex-col py-[50px] px-[2rem] overflow-x-hidden">
         <div className="flex flex-col md:flex-row gap-y-10 gap-x-0 lg:gap-y-0 md:gap-x-10 lg:gap-x-20 container justify-center items-center">
           <Link
-            href="https://www.perintistimbanganindonesia.co.id/"
+            href="tel:6281263083880"
             target="_blank"
             className="bg-primary px-12 py-5 text-white rounded-full hover:bg-secondary transition-colors duration-300"
           >
-            Kunjungi Toko Kami
+            +6281263083880
           </Link>
           <Link
             href="https://wa.me/6281263083880?text=Halo%20Perintis%20Timbangan%20Pekanbaru,%20saya%20ingin%20konsultasi%20produk"
