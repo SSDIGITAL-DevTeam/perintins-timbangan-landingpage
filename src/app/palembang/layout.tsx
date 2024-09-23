@@ -17,7 +17,10 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <Whatsapp waLink="https://wa.me/6282132381920?text=Halo%20Perintis%20Timbangan%20Palembang,%20saya%20ingin%20konsultasi%20produk" />
+      <Whatsapp
+        id="whatsapp-palembang"
+        waLink="https://wa.me/6282132381920?text=Halo%20Perintis%20Timbangan%20Palembang,%20saya%20ingin%20konsultasi%20produk"
+      />
       {children}
     </>
   );

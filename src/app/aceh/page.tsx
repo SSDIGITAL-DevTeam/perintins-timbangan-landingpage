@@ -224,6 +224,7 @@ export default function Home() {
             +628116381298
           </Link>
           <Link
+            id="whatsapp-aceh"
             href="https://wa.me/628116381298?text=Halo%20Perintis%20Timbangan%20Aceh,%20saya%20ingin%20konsultasi%20produk"
             target="_blank"
           >
