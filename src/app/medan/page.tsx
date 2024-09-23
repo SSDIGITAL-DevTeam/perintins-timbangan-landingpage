@@ -223,6 +223,7 @@ export default function Home() {
             +6282166165351
           </Link>
           <Link
+            id="whatsapp-medan"
             href="https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%20konsultasi%20produk"
             target="_blank"
           >
