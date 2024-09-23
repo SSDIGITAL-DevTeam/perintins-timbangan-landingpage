@@ -223,6 +223,7 @@ export default function Home() {
             +6281360612669
           </Link>
           <Link
+            id="whatsapp-rantau-prapat"
             href="https://wa.me/6281360612669?text=Halo%20Perintis%20Timbangan%20Rantau%20Prapat,%20saya%20ingin%20konsultasi%20produk"
             target="_blank"
           >
