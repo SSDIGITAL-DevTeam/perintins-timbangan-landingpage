@@ -223,6 +223,7 @@ export default function Home() {
             +6282132381920
           </Link>
           <Link
+            id="whatsapp-palembang"
             href="https://wa.me/6282132381920?text=Halo%20Perintis%20Timbangan%20Palembang,%20saya%20ingin%20konsultasi%20produk"
             target="_blank"
           >
