@@ -41,7 +41,7 @@ export default function BrandsMarquee(): JSX.Element {
     <div ref={sliderRef} className="keen-slider">
       {brands.map((brand: Brand, index: number) => (
         <div className="keen-slider__slide number-slide1 flex items-center" key={`brand-${index}`}>
-          <Image width={159} height={56} src={brand.logo} alt={brand.name} />
+          <Image width={159} height={56} src={brand.logo} alt={brand.name} className="w-[110px] lg:w-[165px]" />
         </div>
       ))}
     </div>
