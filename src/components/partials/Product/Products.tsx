@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { Product, products } from '@/constant/products';
 import { X } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 interface ProductPopupProps {
   product: Product;
@@ -11,9 +12,27 @@ interface ProductPopupProps {
 }
 
 const ProductPopup: React.FC<ProductPopupProps> = ({ product, onClose }) => {
+  const pathname = usePathname();
+
+  const getWhatsappNumber = () => {
+    switch (pathname) {
+      case '/pekanbaru':
+        return '6281263083880';
+      case '/aceh':
+        return '628116381298';
+      case '/rantau-prapat':
+        return '6281360612669';
+      case '/palembang':
+        return '6282132381920';
+      default:
+        return '6281234567890';
+    }
+  };
+
   const handleWhatsAppClick = () => {
+    const whatsappNumber = getWhatsappNumber();
     const message = encodeURIComponent(`Halo, saya tertarik dengan produk ${product.name}. Bisakah Anda memberi saya informasi lebih lanjut?`);
-    window.open(`https://wa.me/6281234567890?text=${message}`, '_blank');
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
   };
 
   return (
