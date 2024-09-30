@@ -6,7 +6,7 @@ import { JSX } from 'react';
 import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
 
-const animation = { duration: 5000, easing: (t: number) => t };
+const animation = { duration: 9000, easing: (t: number) => t };
 
 export default function BrandsMarquee(): JSX.Element {
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
