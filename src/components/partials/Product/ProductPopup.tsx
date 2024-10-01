@@ -55,7 +55,7 @@ const ProductPopup: React.FC<ProductPopupProps> = ({ product, onClose }) => {
   const handleClose = () => {
     setIsOpen(false);
     document.body.style.overflow = '';
-    setTimeout(onClose, 300); // Delay to allow animation to complete
+    setTimeout(onClose, 300);
   };
 
   if (isDesktop) {
