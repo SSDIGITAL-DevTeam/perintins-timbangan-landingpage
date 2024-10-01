@@ -132,8 +132,8 @@ export default function Home() {
       {/* Carousel Testi */}
       <section className="flex flex-col py-[50px] px-[2rem] overflow-x-hidden">
         <div className="flex flex-col gap-x-10 bg-tertiary rounded-xl p-10 container text-center shadow-md">
-          <h1 className="text-3xl font-bold">Apa yang Dikatakan para Pembeli ?</h1>
-          <div className="flex items-center justify-center p-8 md:p-11">
+          <h1 className="text-xl lg:text-3xl font-bold">Apa yang Dikatakan para Pembeli ?</h1>
+          <div className="flex items-center justify-center md:p-11">
             <CarouselTesti />
           </div>
         </div>
