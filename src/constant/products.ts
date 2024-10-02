@@ -4,6 +4,9 @@ import AssetPricingScale from '@/assets/webp/asset-pricing-scale.webp';
 import AssetBenchScale from '@/assets/webp/asset-bench-scale.webp';
 import AssetCraneScale from '@/assets/webp/asset-crane-scale.webp';
 import AssetPocketScale from '@/assets/webp/asset-pocket-scale.webp';
+import AssetWeighingScale from '@/assets/webp/asset-weighing-scale.webp';
+import AssetWeighingScaleWaterproof from '@/assets/webp/asset-weighing-scale-waterproof.webp';
+import AssetKitchenScale from '@/assets/webp/asset-kitchen-scale.webp';
 
 export type Product = {
   name: string;
@@ -60,5 +63,28 @@ export const products = [
     description: '--------------- FITURE ---------------\n✔ LCD DISPLAY, ABS PLASTIC CASING\n✔ PLATFROM STAINLESS STELL\n✔ HIGH RESOLUSI & SENSITIVE\n✔ POWER DC : 3 CR2032 BATTERY\n✔ DIMENSION SIZE : 95 X 55 X 20 MM',
     pdfLink: 'https://drive.google.com/file/d/1pzt6W4kei18NOZW3iQwR6dkkKXKe93U3/view',
     image: AssetPocketScale.src,
+  },
+  {
+    name: 'Weighing Scale Merk Kinlee Type ACS KL Kapasitas 40kg/5gr',
+    category: 'Timbangan Buah',
+    description: 'Fitur:\n- DUAL SIDE LED DISPLAY WITH SUPER LIGHTNESS\n- POWER SUPPLY AC & RECHARGEABLE BATTERY\n- STAINLESS STEEL PLATFORM & ABS PLASTIC HOUSING\n- ACCUMULATE FUNCTION, PRICE COMPUTING SCALE\n\nKAPASITAS: 40KG/5GR',
+    pdfLink: 'https://drive.google.com/file/d/1avlcKyfpkU6tFqFNO8OUGM9UaE-Kxk8E/view',
+    image: AssetWeighingScale.src,
+  },
+  {
+    name: 'Timbangan Meja Digital Waterproof Merk FixScale Type FWED',
+    category: 'Timbangan Meja',
+    description:
+      '--------------- FEATURES ---------------\n✔ DUAL SIDE GREEN LED DISPLAY\n✔ STAINLESS STEEL HOUSING & STAINLESS STEEL PLATFORM\n✔ KEYS: ON/OFF, MODE, TARE, ZERO\n✔ UNITS: KG, G, LB, OZ\n✔ MOISTURE-PROOF AND IP 68 WATERPROOF DESIGN WITH RESISTANCE STRAIN WEIGHING SENSORS\n\n--------------- SPECIFICATION ---------------\n✔ CAPACITY / DIVISION: ▪ 3KG / 0.2GR, ▪ 6KG / 0.5GR, ▪ 15KG / 1GR, ▪ 30KG / 1GR, ▪ 30KG / 2GR\n✔ POWER SUPPLY: 100-240V, 50-60HZ / 5V, 0.5A\n✔ BUILT-IN LITHIUM BATTERY: 3.7V / 2.2AH\n✔ PAN SIZE: 180 x 215 MM\n✔ ENVIRONMENT TEMPERATURE: 0°C / + 40°C\n✔ STORAGE & TRANSPORTATION TEMPERATURE: -25°C / 55°C',
+    pdfLink: 'https://drive.google.com/file/d/1mo3uqGbIRHwMjSg2uXqoRAlzVnGUouov/view',
+    image: AssetWeighingScaleWaterproof.src,
+  },
+  {
+    name: 'Smart Timbangan Dapur Digital Type HX-T3 Kapasitas 3kg / 0.1gr',
+    category: 'Timbangan Dapur',
+    description:
+      '--------------- FEATURES ---------------\n✔ DUAL SIDE GREEN LED DISPLAY\n✔ STAINLESS STEEL HOUSING & STAINLESS STEEL PLATFORM\n✔ KEYS: ON/OFF, MODE, TARE, ZERO\n✔ UNITS: KG, G, LB, OZ\n✔ MOISTURE-PROOF AND IP 68 WATERPROOF DESIGN WITH RESISTANCE STRAIN WEIGHING SENSORS\n\n--------------- SPECIFICATION ---------------\n✔ CAPACITY / DIVISION: ▪ 3KG / 0.2GR, ▪ 6KG / 0.5GR, ▪ 15KG / 1GR, ▪ 30KG / 1GR, ▪ 30KG / 2GR\n✔ POWER SUPPLY: 100-240V, 50-60HZ / 5V, 0.5A\n✔ BUILT-IN LITHIUM BATTERY: 3.7V / 2.2AH\n✔ PAN SIZE: 180 x 215 MM\n✔ ENVIRONMENT TEMPERATURE: 0°C / + 40°C\n✔ STORAGE & TRANSPORTATION TEMPERATURE: -25°C / 55°C',
+    pdfLink: 'FITUR:\n- LARGE LCD DISPLAY WITH GREEN BACK LIGHT\n- OPERATE POWER: DC3.7 LITHIUM BATTERY\n- OR DC POWER: 9V 500MA\n- PAN SIZE: 190 x 140 MM',
+    image: AssetKitchenScale.src,
   },
 ];
