@@ -29,7 +29,7 @@ export default function Home() {
             <p className="text-white text-lg lg:xl xl:text-2xl lg:px-24">PT. Perintis Timbangan Indonesia menyediakan timbangan berkualitas tinggi dengan akurasi terjamin untuk mendukung kelancaran bisnis Anda</p>
           </div>
           <Link href="https://www.perintistimbanganindonesia.co.id" className="flex px-8 py-3 lg:px-10 lg:py-4 bg-primary text-white rounded-full hover:bg-secondary transition-colors duration-300">
-            Kunjungi Toko Kami
+            Kunjungi Website Kami
           </Link>
         </div>
       </header>
@@ -43,22 +43,6 @@ export default function Home() {
 
       {/* Product */}
       <Products />
-
-      {/* Timbangan */}
-      <section className="flex flex-col container py-10 overflow-x-hidden">
-        <div className="bg-tertiary rounded-xl flex flex-col lg:flex-row justify-between shadow-xl">
-          <div className="flex flex-col gap-y-5 p-6 lg:w-1/2 text-justify">
-            <h1 className="font-bold text-xl">Timbangan Laboratorium Berkualitas untuk Akurasi Maksimal</h1>
-            <p className="md:text-lg">
-              Apakah Anda mencari timbangan laboratorium dengan presisi tinggi dan performa andal? PTI hadir untuk memenuhi kebutuhan Anda! Kami menyediakan timbangan laboratorium terbaik dengan teknologi terkini, memastikan hasil
-              pengukuran yang akurat dan konsisten setiap saat.
-            </p>
-          </div>
-          <div className="p-9 flex items-center justify-center bg-background rounded-xl lg:w-[42%] drop-shadow-lg">
-            <Image src={AssetTimbanganLab} alt="Asset Timbangan Lab" className="w-[250px] lg:w-[300px]" />
-          </div>
-        </div>
-      </section>
 
       {/* Pilih SNI */}
       <section className="flex flex-col container py-[50px] lg:py-[100px] px-[3rem] overflow-x-hidden">

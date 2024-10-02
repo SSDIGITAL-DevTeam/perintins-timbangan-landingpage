@@ -28,7 +28,7 @@ export default function Home() {
             <p className="text-white text-lg lg:xl xl:text-2xl lg:px-24">PT. Perintis Timbangan Indonesia menyediakan timbangan berkualitas tinggi dengan akurasi terjamin untuk mendukung kelancaran bisnis Anda</p>
           </div>
           <Link href="https://www.perintistimbanganindonesia.co.id" className="flex px-8 py-3 lg:px-10 lg:py-4 bg-primary text-white rounded-full hover:bg-secondary transition-colors duration-300">
-            Kunjungi Toko Kami
+            Kunjungi Website Kami
           </Link>
         </div>
       </header>
