@@ -102,7 +102,7 @@ export default function Home() {
       <section className="flex flex-col py-[80px] lg:py-[120px] px-[2rem] overflow-x-hidden">
         <div className="flex flex-col lg:flex-row gap-x-0 gap-y-9 lg:gap-y-0 lg:gap-x-10 bg-tertiary rounded-xl p-8 md:p-11 container shadow-md">
           <div className="flex flex-col gap-y-6 w-full lg:w-[40%]">
-            <h1 className="text-2xl font-bold">Sertifikat</h1>
+            <h1 className="text-2xl font-bold">Sertifikasi Timbangan PTI</h1>
             <div className="flex flex-col gap-y-4 text-justify lg:text-left">
               <p className="text-lg">
                 PTI menyediakan timbangan berkualitas tinggi yang telah teruji dan tersertifikasi sesuai standar. Dengan keakuratan yang tak tertandingi, setiap produk PTI dirancang untuk memenuhi kebutuhan industri Anda, mulai dari skala
@@ -127,6 +127,7 @@ export default function Home() {
 
       {/* cta */}
       <section className="flex flex-col py-[50px] px-[2rem] overflow-x-hidden">
+        <h1 className="text-xl lg:text-3xl font-bold text-center mb-8">Hubungi Kami dan Dapatkan Penawaran Terbaik</h1>
         <div className="flex flex-col md:flex-row gap-y-10 gap-x-0 lg:gap-y-0 md:gap-x-10 lg:gap-x-20 container justify-center items-center">
           <Link href="tel:628116381298" target="_blank" className="bg-primary px-12 py-5 text-white rounded-full hover:bg-secondary transition-colors duration-300">
             +628116381298
