@@ -159,7 +159,7 @@ export default function Home() {
         <div className="w-full max-w-7xl mx-auto">
           <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3981.930176217754!2d98.6725369!3d3.603463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131ebd98c1b81%3A0x6fb6535e7bfde585!2sPUSAT%20TIMBANGAN%20DIGITAL%20%26%20MANUAL%20-%20Eceran%20%26%20Grosir%20-%20SCALEINDO%20(PT.PERINTIS%20TIMBANGAN%20INDONESIA)!5e0!3m2!1sid!2sid!4v1725911386981!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.40167639768!2d104.7634839!3d-2.9859006999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b77e2704e8137%3A0x1596bb918b07dd8f!2sPUSAT%20TIMBANGAN%20PALEMBANG!5e0!3m2!1sid!2sid!4v1727851342526!5m2!1sid!2sid"
               style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"
