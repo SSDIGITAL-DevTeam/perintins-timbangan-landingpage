@@ -10,6 +10,9 @@ import AssetComputer from '@/assets/svg/asset-computer.svg';
 import AssetShield from '@/assets/svg/asset-shield.svg';
 import AssetTimbanganPegas from '@/assets/webp/asset-timbangan-pegas.webp';
 import AssetSertifikat from '@/assets/webp/asset-sertifikat.webp';
+import AssetSertifikat1 from '@/assets/webp/asset-sertifikat-1.webp';
+import AssetSertifikat2 from '@/assets/webp/asset-sertifikat-2.webp';
+import AssetSertifikat3 from '@/assets/webp/asset-sertifikat-3.webp';
 import AssetTokopedia from '@/assets/svg/asset-tokopedia.svg';
 import AssetShopee from '@/assets/svg/asset-shopee.svg';
 import AssetWhatsapp from '@/assets/svg/asset-whatsapp.svg';
@@ -111,7 +114,6 @@ export default function Home() {
 
       {/* sertifikat */}
       <section className="flex flex-col py-[80px] lg:py-[120px] px-[2rem] overflow-x-hidden">
-        <h1 className="text-xl lg:text-3xl font-bold text-center mb-8">Hubungi Kami dan Dapatkan Penawaran Terbaik</h1>
         <div className="flex flex-col lg:flex-row gap-x-0 gap-y-9 lg:gap-y-0 lg:gap-x-10 bg-tertiary rounded-xl p-8 md:p-11 container shadow-md">
           <div className="flex flex-col gap-y-6 w-full lg:w-[40%]">
             <h1 className="text-2xl font-bold">Sertifikasi Timbangan PTI</h1>
@@ -123,7 +125,12 @@ export default function Home() {
               <p className="text-lg">Sertifikasi resmi yang kami miliki menjamin setiap timbangan lulus uji kualitas dan keandalan, memberikan Anda hasil yang konsisten dan presisi.</p>
             </div>
           </div>
-          <Image src={AssetSertifikat} alt="Asset Sertifikat" className="w-full lg:w-[60%]" />
+          <Image src={AssetSertifikat} alt="Asset Sertifikat" className="w-full lg:w-[60%] hidden lg:block" />
+          <div className="lg:hidden flex flex-col gap-y-4">
+            <Image src={AssetSertifikat1} alt="Asset Sertifikat" className="w-full" />
+            <Image src={AssetSertifikat2} alt="Asset Sertifikat" className="w-full" />
+            <Image src={AssetSertifikat3} alt="Asset Sertifikat" className="w-full" />
+          </div>
         </div>
       </section>
 

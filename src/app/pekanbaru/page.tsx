@@ -1,8 +1,6 @@
 import BrandsMarquee from '@/components/partials/Marquee/BrandMarquee';
 import Image from 'next/image';
 import Link from 'next/link';
-
-import AssetTimbanganLab from '@/assets/webp/asset-timbangan.webp';
 import AssetTimbanganSNI from '@/assets/webp/asset-timbangan-sni.webp';
 import AssetGearKey from '@/assets/svg/asset-gear-key.svg';
 import AssetGear from '@/assets/svg/asset-gear.svg';
@@ -10,6 +8,9 @@ import AssetComputer from '@/assets/svg/asset-computer.svg';
 import AssetShield from '@/assets/svg/asset-shield.svg';
 import AssetTimbanganPegas from '@/assets/webp/asset-timbangan-pegas.webp';
 import AssetSertifikat from '@/assets/webp/asset-sertifikat.webp';
+import AssetSertifikat1 from '@/assets/webp/asset-sertifikat-1.webp';
+import AssetSertifikat2 from '@/assets/webp/asset-sertifikat-2.webp';
+import AssetSertifikat3 from '@/assets/webp/asset-sertifikat-3.webp';
 import AssetTokopedia from '@/assets/svg/asset-tokopedia.svg';
 import AssetShopee from '@/assets/svg/asset-shopee.svg';
 import AssetWhatsapp from '@/assets/svg/asset-whatsapp.svg';
@@ -35,7 +36,7 @@ export default function Home() {
       </header>
 
       {/* Brand Partners */}
-      <section className="py-2 ">
+      <section className="py-2">
         <div className="my-8 flex gap-4 overflow-x-auto lg:my-10">
           <BrandsMarquee />
         </div>
@@ -110,7 +111,12 @@ export default function Home() {
               <p className="text-lg">Sertifikasi resmi yang kami miliki menjamin setiap timbangan lulus uji kualitas dan keandalan, memberikan Anda hasil yang konsisten dan presisi.</p>
             </div>
           </div>
-          <Image src={AssetSertifikat} alt="Asset Sertifikat" className="w-full lg:w-[60%]" />
+          <Image src={AssetSertifikat} alt="Asset Sertifikat" className="w-full lg:w-[60%] hidden lg:block" />
+          <div className="lg:hidden flex flex-col gap-y-4">
+            <Image src={AssetSertifikat1} alt="Asset Sertifikat" className="w-full" />
+            <Image src={AssetSertifikat2} alt="Asset Sertifikat" className="w-full" />
+            <Image src={AssetSertifikat3} alt="Asset Sertifikat" className="w-full" />
+          </div>
         </div>
       </section>
 
