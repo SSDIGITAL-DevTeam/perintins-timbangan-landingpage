@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
         </Link>
         {isMobile && (
           <div className={`flex md:hidden fixed right-4 top-4 transition-all duration-300 ease-in-out items-center ${showButton ? 'translate-y-4 opacity-100' : '-translate-y-full opacity-0'}`}>
-            <Link href="/khttps://www.perintistimbanganindonesia.co.id/o" className="px-6 py-3 bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-300 rounded-full">
+            <Link href="https://www.perintistimbanganindonesia.co.id/" className="px-6 py-3 bg-primary text-white font-semibold hover:bg-secondary transition-colors duration-300 rounded-full">
               Kunjungi Website Kami
             </Link>
           </div>
