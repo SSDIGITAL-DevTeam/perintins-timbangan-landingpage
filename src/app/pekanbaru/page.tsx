@@ -17,6 +17,7 @@ import AssetWhatsapp from '@/assets/svg/asset-whatsapp.svg';
 import { AccordionDemo } from '@/components/partials/Accordion/Accordion';
 import { CarouselTesti } from '@/components/partials/CarouselTesti/CarouselTesti';
 import Products from '@/components/partials/Product/Products';
+import PelayananSection from '@/components/partials/PelayananSection/PelayananSection';
 
 export default function Home() {
   return (
@@ -98,6 +99,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Pelayanan Kami */}
+      <PelayananSection />
 
       {/* sertifikat */}
       <section className="flex flex-col py-[80px] lg:py-[120px] px-[2rem] overflow-x-hidden">
