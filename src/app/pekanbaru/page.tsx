@@ -37,7 +37,7 @@ export default function Home() {
 
       {/* Brand Partners */}
       <section className="py-2 flex flex-col gap-y-6">
-        <h1 className="text-xl xl:text-3xl font-bold text-center mt-9">Merk ternama kualitas terjamin</h1>
+        <h1 className="text-xl xl:text-3xl font-bold text-center mt-9 capitalize">Merk ternama kualitas terjamin</h1>
         <div className="my-8 flex gap-4 overflow-x-auto lg:my-10">
           <BrandsMarquee />
         </div>
