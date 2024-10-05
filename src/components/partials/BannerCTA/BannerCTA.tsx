@@ -33,10 +33,10 @@ export default function BannerCTA(): JSX.Element {
     <section className="bg-primary py-10">
       <div className="container">
         <div className="flex flex-col items-center justify-center gap-y-4">
-          <h1 className="text-2xl text-white font-bold text-center">Ingin Lebih Banyak Pilihan Timbangan?</h1>
-          <p className="text-white text-center font-medium">Hubungi kami sekarang untuk mendapatkan penawaran terbaik dari kami</p>
+          <h1 className="text-2xl text-white font-bold text-center">Butuh Lebih Banyak Pilihan?</h1>
+          <p className="text-white text-center font-medium">Kami menyediakan +100 produk timbangan. Hubungi kami sekarang untuk pilihan lainnya.</p>
           <button onClick={handleWhatsAppClick} className="bg-white text-primary font-bold py-4 px-8 rounded-full">
-            Hubungi Kami Sekarang
+            Hubungi Kami
           </button>
         </div>
       </div>
