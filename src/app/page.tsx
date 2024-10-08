@@ -75,10 +75,10 @@ export default function Home() {
       </section>
 
       {/* Kenapa memilih pti */}
-      <section className="flex flex-col py-[30px] md:py-[50px] overflow-x-hidden">
+      <section className="flex flex-col py-[50px] overflow-x-hidden">
         <h1 className="font-bold text-center text-3xl lg:text-4xl xl:text-6xl mb-20">Kenapa Memilih Perintis Timbangan Indonesia</h1>
         <div className="flex flex-col lg:flex-row justify-between gap-x-11 pr-8">
-          <div className="flex flex-col gap-y-12 w-full lg:w-1/2">
+          <div className="flex flex-col gap-y-12 w-full lg:w-2/3">
             <div className="flex gap-x-8 justify-center items-center w-full bg-secondary rounded-r-full p-8 md:p-11">
               <Image src={AssetGearKey} alt="Asset Gear Key" className="w-[50px] lg:w-[70px]" />
               <div className="flex flex-col gap-y-5 w-2/3">
@@ -88,7 +88,7 @@ export default function Home() {
             </div>
             <div className="flex gap-x-8 justify-center items-center w-full bg-secondary rounded-r-full p-8 md:p-11">
               <Image src={AssetGear} alt="Asset Gear Key" className="w-[50px] lg:w-[70px]" />
-              <div className="flex flex-col gap-y-5 lg:w-2/3">
+              <div className="flex flex-col gap-y-5 w-2/3">
                 <h1 className="text-xl md:text-2xl text-white font-semibold">Kalibrasi</h1>
                 <p className="text-base md:text-lg text-white">Kami menyediakan layanan kalibrasi ulang untuk memastikan timbangan Anda selalu beroperasi dengan akurasi yang optimal. </p>
               </div>
@@ -107,9 +107,6 @@ export default function Home() {
                 <p className="text-base md:text-lg text-white">Gunakan suku cadang asli untuk menjaga performa dan usia produk Anda. Kami menjamin ketersediaan suku cadang produk.</p>
               </div>
             </div>
-          </div>
-          <div className="xl:pr-[18rem] items-center justify-center self-center">
-            <Image src={AssetTimbanganPegas} alt="Asset Timbangan Pegas" className="hidden lg:block lg:w-[450px] xl:h-full" />
           </div>
         </div>
       </section>
