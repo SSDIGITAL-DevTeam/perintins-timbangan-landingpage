@@ -19,6 +19,7 @@ import AssetWhatsapp from '@/assets/svg/asset-whatsapp.svg';
 import { AccordionDemo } from '@/components/partials/Accordion/Accordion';
 import { CarouselTesti } from '@/components/partials/CarouselTesti/CarouselTesti';
 import PelayananSection from '@/components/partials/PelayananSection/PelayananSection';
+import FeatureList from '@/components/partials/FeatureList/FeatureList';
 
 export default function Home() {
   return (
@@ -68,8 +69,8 @@ export default function Home() {
         </h1>
         <div className="flex flex-col lg:flex-row justify-between py-[100px] items-center">
           <Image src={AssetTimbanganSNI} alt="Asset Timbangan SNI" className="w-[540px]" />
-          <div className="w-full lg:w-2/5 text-right">
-            <AccordionDemo />
+          <div className="w-full lg:w-2/5 md:text-right">
+            <FeatureList />
           </div>
         </div>
       </section>
