@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { usePathname } from 'next/navigation';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Star1 } from 'iconsax-react';
+import { Star } from 'lucide-react';
 
 const testimonialData = {
   palembang: {
@@ -139,7 +139,7 @@ const GoogleReviewSummary = ({ rating, totalReviews }: { rating: number; totalRe
       <div className="flex items-center gap-2">
         <div className="flex">
           {[...Array(5)].map((_, i) => (
-            <Star1 key={i} size={24} variant="Bold" className="text-yellow-500" />
+            <Star key={i} size={24} fill="#eab308" className="text-yellow-500" />
           ))}
         </div>
         <span className="text-2xl font-bold">{rating}</span>
@@ -161,7 +161,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ text, name }) => {
       <div className="flex flex-col items-center justify-center lg:mt-4">
         <div className="flex gap-x-1">
           {[...Array(5)].map((_, i) => (
-            <Star1 key={i} size={20} variant="Bold" className="text-yellow-500" />
+            <Star key={i} size={20} fill="#eab308" className="text-yellow-500" />
           ))}
         </div>
         <div className="flex flex-col items-center gap-y-1 mt-3">

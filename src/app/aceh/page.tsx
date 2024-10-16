@@ -19,6 +19,7 @@ import { CarouselTesti } from '@/components/partials/CarouselTesti/CarouselTesti
 import Products from '@/components/partials/Product/Products';
 import PelayananSection from '@/components/partials/PelayananSection/PelayananSection';
 import FeatureList from '@/components/partials/FeatureList/FeatureList';
+import { DealerGallery } from '@/components/Gallery/DealerGallery';
 
 export default function Home() {
   return (
@@ -119,6 +120,16 @@ export default function Home() {
             <Image src={AssetSertifikat1} alt="Asset Sertifikat" className="w-full" />
             <Image src={AssetSertifikat2} alt="Asset Sertifikat" className="w-full" />
             <Image src={AssetSertifikat3} alt="Asset Sertifikat" className="w-full" />
+          </div>
+        </div>
+      </section>
+
+      {/* Galeri */}
+      <section className="flex flex-col py-[50px] px-[2rem] overflow-x-hidden">
+        <div className="flex flex-col gap-x-10 bg-tertiary rounded-xl p-5 lg:p-10 container text-center shadow-md">
+          <h1 className="text-xl lg:text-3xl font-bold">Galeri</h1>
+          <div className="flex flex-col items-center justify-center">
+            <DealerGallery />
           </div>
         </div>
       </section>
