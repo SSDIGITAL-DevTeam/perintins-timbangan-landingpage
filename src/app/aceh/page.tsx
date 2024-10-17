@@ -49,7 +49,7 @@ export default function Home() {
 
       {/* Pilih SNI */}
       <section className="flex flex-col container py-[50px] lg:py-[100px] px-[3rem] overflow-x-hidden">
-        <h1 className="font-bold text-center text-3xl lg:text-4xl xl:text-6xl mb-16">
+        <h1 className="font-bold text-center text-3xl lg:text-5xl mb-16">
           Pilihlah Produk <span className="text-secondary">Ber-SNI</span>
         </h1>
         <div className="flex flex-col lg:flex-row justify-between py-[100px] items-center">
@@ -131,7 +131,9 @@ export default function Home() {
       {/* Galeri */}
       <section className="flex flex-col py-[50px] px-[2rem] overflow-x-hidden">
         <div className="flex flex-col gap-x-10 bg-tertiary rounded-xl p-5 lg:p-10 container text-center shadow-md">
-          <h1 className="text-xl lg:text-3xl font-bold">Galeri</h1>
+          <h1 className="font-bold text-center text-3xl lg:text-5xl">
+            Galeri <span className="text-secondary">Foto</span>
+          </h1>
           <div className="flex flex-col items-center justify-center">
             <DealerGallery />
           </div>

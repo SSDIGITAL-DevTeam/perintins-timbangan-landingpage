@@ -4,7 +4,7 @@ export default function PelayananSection() {
   return (
     <section className="flex flex-col py-[50px] lg:py-[100px] px-4 lg:px-8 overflow-x-hidden">
       <div className="container mx-auto">
-        <h1 className="font-bold text-center text-3xl lg:text-4xl xl:text-6xl mb-16">
+        <h1 className="font-bold text-center text-3xl lg:text-5xl mb-16">
           Pelayanan <span className="text-secondary">Kami</span>
         </h1>
 
