@@ -2,19 +2,17 @@ import BrandsMarquee from '@/components/partials/Marquee/BrandMarquee';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import AssetTimbanganLab from '@/assets/webp/asset-timbangan.webp';
+import AssetTimbanganKenapa from '@/assets/png/asset-timbangan.png';
 import AssetTimbanganSNI from '@/assets/webp/asset-timbangan-sni.webp';
 import AssetGearKey from '@/assets/svg/asset-gear-key.svg';
 import AssetGear from '@/assets/svg/asset-gear.svg';
 import AssetComputer from '@/assets/svg/asset-computer.svg';
 import AssetShield from '@/assets/svg/asset-shield.svg';
-import AssetTimbanganPegas from '@/assets/webp/asset-timbangan-pegas.webp';
 import AssetSertifikat from '@/assets/webp/asset-sertifikat.webp';
 import AssetSertifikat1 from '@/assets/webp/asset-sertifikat-1.webp';
 import AssetSertifikat2 from '@/assets/webp/asset-sertifikat-2.webp';
 import AssetSertifikat3 from '@/assets/webp/asset-sertifikat-3.webp';
 import AssetWhatsapp from '@/assets/svg/asset-whatsapp.svg';
-import { AccordionDemo } from '@/components/partials/Accordion/Accordion';
 import { CarouselTesti } from '@/components/partials/CarouselTesti/CarouselTesti';
 import Products from '@/components/partials/Product/Products';
 import PelayananSection from '@/components/partials/PelayananSection/PelayananSection';
@@ -64,36 +62,42 @@ export default function Home() {
 
       {/* Kenapa memilih pti */}
       <section className="flex flex-col py-[50px] overflow-x-hidden">
-        <h1 className="font-bold text-center text-3xl lg:text-4xl xl:text-6xl mb-20">Kenapa Memilih Perintis Timbangan Indonesia</h1>
-        <div className="flex flex-col lg:flex-row justify-between gap-x-11 pr-8">
-          <div className="flex flex-col gap-y-12 w-full lg:w-2/3">
-            <div className="flex gap-x-8 justify-center items-center w-full bg-secondary rounded-r-full p-8 md:p-11">
+        <h1 className="font-bold text-center text-3xl lg:text-5xl mb-16 lg:mb-28">Kenapa Memilih Perintis Timbangan Indonesia</h1>
+        <div className="flex flex-col lg:flex-row justify-between lg:gap-x-10 pr-3 lg:pr-8 lg:mt-20">
+          <div className="flex flex-col gap-y-12 w-full lg:w-2/4">
+            <div className="flex gap-x-8 justify-center items-center w-full bg-secondary rounded-r-full p-8 md:p-9">
               <Image src={AssetGearKey} alt="Asset Gear Key" className="w-[50px] lg:w-[70px]" />
-              <div className="flex flex-col gap-y-5 w-2/3">
+              <div className="flex flex-col gap-y-5 w-full lg:w-2/4">
                 <h1 className="text-xl md:text-2xl text-white font-semibold">Perbaikan & Service</h1>
                 <p className="text-base md:text-lg text-white">Kami menyediakan layanan perbaikan dan pengecekan rutin untuk memastikan timbangan Anda selalu dalam kondisi optimal.</p>
               </div>
             </div>
-            <div className="flex gap-x-8 justify-center items-center w-full bg-secondary rounded-r-full p-8 md:p-11">
+            <div className="flex gap-x-8 justify-center items-center w-full bg-secondary rounded-r-full p-8 md:p-9">
               <Image src={AssetGear} alt="Asset Gear Key" className="w-[50px] lg:w-[70px]" />
-              <div className="flex flex-col gap-y-5 w-2/3">
+              <div className="flex flex-col gap-y-5 w-full lg:w-2/4">
                 <h1 className="text-xl md:text-2xl text-white font-semibold">Kalibrasi</h1>
                 <p className="text-base md:text-lg text-white">Kami menyediakan layanan kalibrasi ulang untuk memastikan timbangan Anda selalu beroperasi dengan akurasi yang optimal. </p>
               </div>
             </div>
-            <div className="flex gap-x-8 justify-center items-center w-full bg-secondary rounded-r-full p-8 md:p-11">
+            <div className="flex gap-x-8 justify-center items-center w-full bg-secondary rounded-r-full p-8 md:p-9">
               <Image src={AssetComputer} alt="Asset Gear Key" className="w-[50px] lg:w-[70px]" />
-              <div className="flex flex-col gap-y-5 w-2/3">
+              <div className="flex flex-col gap-y-5 w-full lg:w-2/4">
                 <h1 className="text-xl md:text-2xl text-white font-semibold">Program</h1>
                 <p className="text-base md:text-lg text-white">Kami menawarkan software yang dirancang untuk mempercepat proses data dengan bantuan peralatan timbangan. </p>
               </div>
             </div>
-            <div className="flex gap-x-8 justify-center items-center w-full bg-secondary rounded-r-full p-8 md:p-11">
+            <div className="flex gap-x-8 justify-center items-center w-full bg-secondary rounded-r-full p-8 md:p-9">
               <Image src={AssetShield} alt="Asset Gear Key" className="w-[50px] lg:w-[70px]" />
-              <div className="flex flex-col gap-y-5 w-2/3">
+              <div className="flex flex-col gap-y-5 w-full lg:w-2/4">
                 <h1 className="text-xl md:text-2xl text-white font-semibold">Garansi</h1>
                 <p className="text-base md:text-lg text-white">Gunakan suku cadang asli untuk menjaga performa dan usia produk Anda. Kami menjamin ketersediaan suku cadang produk.</p>
               </div>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center lg:w-2/4 lg:pl-8">
+            <div className="aspect-square w-[80%] hidden lg:block">
+              <Image src={AssetTimbanganKenapa} alt="Asset Timbangan Kenapa" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>
