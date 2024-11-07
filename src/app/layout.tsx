@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/layouts/Navbar/Navbar";
 import FooterUI from "@/components/layouts/Footer/FooterUI";
-import Whatsapp from "@/components/partials/Whatsapp/Whatsapp";
-import FlyButton from "@/components/partials/FlyButton/FlyButton";
+// import Whatsapp from "@/components/partials/Whatsapp/Whatsapp";
+// import FlyButton from "@/components/partials/FlyButton/FlyButton";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -43,7 +43,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           {/* navbar */}
           <Navbar />
           {/* <Whatsapp /> */}
-          <FlyButton />
+          {/* <FlyButton /> */}
           <main className="flex flex-col min-h-screen overflow-x-hidden">
             {children}
           </main>
