@@ -10,9 +10,10 @@ import { useMediaQuery } from 'usehooks-ts';
 interface ProductPopupProps {
   product: Product;
   onClose: () => void;
+  id:string
 }
 
-const ProductPopup: React.FC<ProductPopupProps> = ({ product, onClose }) => {
+const ProductPopup: React.FC<ProductPopupProps> = ({ product, onClose, id }) => {
   const pathname = usePathname();
   const isDesktop = useMediaQuery('(min-width: 768px)');
   const [isOpen, setIsOpen] = useState(false);
@@ -82,7 +83,7 @@ const ProductPopup: React.FC<ProductPopupProps> = ({ product, onClose }) => {
                 >
                   Lihat PDF
                 </a>
-                <button onClick={handleWhatsAppClick} className="inline-block bg-secondary text-white px-6 py-3 rounded-full hover:bg-secondaryDark transition-colors">
+                <button id={id} onClick={handleWhatsAppClick} className="inline-block bg-secondary text-white px-6 py-3 rounded-full hover:bg-secondaryDark transition-colors">
                   Lanjutkan ke WhatsApp
                 </button>
               </div>
