@@ -10,7 +10,7 @@ import { useMediaQuery } from 'usehooks-ts';
 interface ProductPopupProps {
   product: Product;
   onClose: () => void;
-  id:string
+  id: string;
 }
 
 const ProductPopup: React.FC<ProductPopupProps> = ({ product, onClose, id }) => {
@@ -40,6 +40,8 @@ const ProductPopup: React.FC<ProductPopupProps> = ({ product, onClose, id }) => 
         return '6281360612669';
       case '/palembang':
         return '6282132381920';
+      case '/lampung':
+        return '628116023399';
       default:
         return '6281234567890';
     }

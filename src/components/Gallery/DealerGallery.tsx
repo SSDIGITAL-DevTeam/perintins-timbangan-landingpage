@@ -152,23 +152,33 @@ const defaultGallery = {
   title: 'Galeri Pelanggan',
   images: [
     {
-      src: '/webp/dealer/pekanbaru/image1.jpg',
-      alt: 'Toko Pekanbaru',
+      src: '/webp/dealer/medan/image1.webp',
+      alt: 'Toko medan',
       caption: 'Dealer Default',
     },
     {
-      src: '/webp/dealer/pekanbaru/image1.jpg',
-      alt: 'Toko Pekanbaru',
+      src: '/webp/dealer/medan/image2.webp',
+      alt: 'Toko medan',
       caption: 'Dealer Default',
     },
     {
-      src: '/webp/dealer/pekanbaru/image1.jpg',
-      alt: 'Toko Pekanbaru',
+      src: '/webp/dealer/medan/image3.webp',
+      alt: 'Toko medan',
       caption: 'Dealer Default',
     },
     {
-      src: '/webp/dealer/pekanbaru/image1.jpg',
-      alt: 'Toko Pekanbaru',
+      src: '/webp/dealer/medan/image4.webp',
+      alt: 'Toko medan',
+      caption: 'Dealer Default',
+    },
+    {
+      src: '/webp/dealer/medan/image5.webp',
+      alt: 'Toko medan',
+      caption: 'Dealer Default',
+    },
+    {
+      src: '/webp/dealer/medan/image6.webp',
+      alt: 'Toko medan',
       caption: 'Dealer Default',
     },
   ],

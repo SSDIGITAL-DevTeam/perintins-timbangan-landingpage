@@ -16,6 +16,8 @@ export default function BannerCTA(): JSX.Element {
         return '6281360612669';
       case '/palembang':
         return '6282132381920';
+      case '/lampung':
+        return '628116023399';
       default:
         return '6281234567890';
     }
