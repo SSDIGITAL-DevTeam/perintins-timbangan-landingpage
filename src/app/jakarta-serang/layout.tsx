@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://perintistimbanganindonesia.co.id'),
-  title: 'Perintis Timbangan Lampung | Landing Page',
+  title: 'Perintis Timbangan Jakarta | Landing Page',
   description: 'perintis timbangan indonesia',
   keywords: ['timbangan, timbangan indonesia'],
   alternates: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <Whatsapp id="whatsapp-lampung" waLink="https://wa.me/628116023399?text=Halo%20Perintis%20Timbangan%20Palembang,%20saya%20ingin%20konsultasi%20produk" />
+      <Whatsapp id="whatsapp-jakarta" waLink="https://wa.me/6281362618899?text=Halo%20Perintis%20Timbangan%20Palembang,%20saya%20ingin%20konsultasi%20produk" />
       {children}
     </>
   );

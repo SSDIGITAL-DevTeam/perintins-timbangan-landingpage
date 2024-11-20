@@ -42,6 +42,8 @@ const ProductPopup: React.FC<ProductPopupProps> = ({ product, onClose, id }) => 
         return '6282132381920';
       case '/lampung':
         return '628116023399';
+      case '/jakarta-serang':
+        return '6281362618899';
       default:
         return '6281234567890';
     }
