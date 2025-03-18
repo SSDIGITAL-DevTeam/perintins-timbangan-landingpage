@@ -1,3 +1,4 @@
+import DialogDiscount from "@/components/partials/Dialog/DialogDiscount";
 import Whatsapp from "@/components/partials/Whatsapp/Whatsapp";
 import type { Metadata } from "next";
 
@@ -21,6 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         id="whatsapp-medan"
         waLink="https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%20konsultasi%20produk"
       />
+      <DialogDiscount id="discount-medan" waLink="https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%mengetahui%20lebih%banyak%20mengenai%20diskon%20ini"/>
       {children}
     </>
   );

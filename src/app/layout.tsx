@@ -5,6 +5,7 @@ import FooterUI from "@/components/layouts/Footer/FooterUI";
 // import Whatsapp from "@/components/partials/Whatsapp/Whatsapp";
 // import FlyButton from "@/components/partials/FlyButton/FlyButton";
 import Script from "next/script";
+import DialogDiscount from "@/components/partials/Dialog/DialogDiscount";
 
 export const metadata: Metadata = {
   title: "Perintis Timbangan Indonesia",
@@ -42,6 +43,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           ></noscript>
           {/* navbar */}
           <Navbar />
+          {/* <DialogDiscount id="discount-medan" waLink="https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%mengetahui%20lebih%banyak%20mengenai%20diskon%20ini"/> */}
           {/* <Whatsapp /> */}
           {/* <FlyButton /> */}
           <main className="flex flex-col min-h-screen overflow-x-hidden">
