@@ -5,7 +5,7 @@ import FooterUI from "@/components/layouts/Footer/FooterUI";
 // import Whatsapp from "@/components/partials/Whatsapp/Whatsapp";
 // import FlyButton from "@/components/partials/FlyButton/FlyButton";
 import Script from "next/script";
-import DialogDiscount from "@/components/partials/Dialog/DialogDiscount";
+// import DialogDiscount from "@/components/partials/Dialog/DialogDiscount";
 
 export const metadata: Metadata = {
   title: "Perintis Timbangan Indonesia",

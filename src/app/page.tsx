@@ -19,12 +19,12 @@ import AssetWhatsapp from '@/assets/svg/asset-whatsapp.svg';
 import { CarouselTesti } from '@/components/partials/CarouselTesti/CarouselTesti';
 import PelayananSection from '@/components/partials/PelayananSection/PelayananSection';
 import FeatureList from '@/components/partials/FeatureList/FeatureList';
-import DialogDiscount from '@/components/partials/Dialog/DialogDiscount';
+// import DialogDiscount from '@/components/partials/Dialog/DialogDiscount';
 
 export default function Home() {
   return (
     <main>
-      <DialogDiscount id="discount-medan" waLink="https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%mengetahui%20lebih%banyak%20mengenai%20diskon%20ini" />
+      {/* <DialogDiscount id="discount-medan" waLink="https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%mengetahui%20lebih%banyak%20mengenai%20diskon%20ini" /> */}
       {/* Header */}
       <header className='relative flex flex-col bg-[url("/webp/asset-bg-hero.webp")] bg-cover bg-center bg-no-repeat min-h-[60vh] lg:min-h-screen justify-center items-center overflow-x-hidden'>
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/90 to-transparent opacity-90"></div>
