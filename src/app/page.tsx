@@ -20,6 +20,8 @@ import { CarouselTesti } from '@/components/partials/CarouselTesti/CarouselTesti
 import PelayananSection from '@/components/partials/PelayananSection/PelayananSection';
 import FeatureList from '@/components/partials/FeatureList/FeatureList';
 import DialogDiscount from '@/components/partials/Dialog/DialogDiscount';
+import BannerPromoMobile from '@/assets/webp/asset-discount-2025-banner-mobile.webp';
+import BannerPromo from '@/assets/webp/asset-discount-2025-banner.webp';
 
 export default function Home() {
   return (
@@ -38,6 +40,34 @@ export default function Home() {
           </Link>
         </div>
       </header>
+
+    {/* Promo Image */}
+      {/* <section className="py-2 flex flex-col gap-y-6">
+        <h1 className="text-xl xl:text-3xl font-bold text-center mt-9">Merk ternama kualitas terjamin</h1>
+        <div className="my-8 flex gap-4 overflow-x-auto lg:my-10">
+          <BrandsMarquee />
+        </div>
+      </section> */}
+
+      <section className="py-8">
+        <div className="container p-4 md:p-8">
+          <Image
+            // radius="sm"
+            src={BannerPromo.src}
+            height={1080}
+            width={1920}
+            alt="Promo Banner"
+            className="w-full items-center justify-center md:flex hidden rounded-md"
+          />
+          <Image
+            src={BannerPromoMobile.src}
+            height={1080}
+            width={1920}
+            alt="Promo Banner"
+            className="w-full items-center justify-center flex md:hidden rounded-md"
+          />
+        </div>
+      </section>
 
       {/* Brand Partners */}
       <section className="py-2 flex flex-col gap-y-6">
