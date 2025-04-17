@@ -20,6 +20,7 @@ import Products from "@/components/partials/Product/Products";
 import PelayananSection from "@/components/partials/PelayananSection/PelayananSection";
 import FeatureList from "@/components/partials/FeatureList/FeatureList";
 import { DealerGallery } from "@/components/Gallery/DealerGallery";
+import PromoSection from "@/components/layouts/Section/PromoSection";
 
 export default function Home() {
   return (
@@ -46,6 +47,10 @@ export default function Home() {
           </Link>
         </div>
       </header>
+
+      <section className="py-8">
+        <PromoSection id="discount-pekanbaru" waLink="https://wa.me/6281263083880?text=Halo%20Perintis%20Timbangan%20Pekanbaru,%20saya%20ingin%mengetahui%20lebih%banyak%20mengenai%20diskon%20ini"/>
+      </section>
 
       {/* Brand Partners */}
       <section className="py-2 flex flex-col gap-y-6">

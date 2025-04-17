@@ -15,6 +15,7 @@ import AssetShopee from '@/assets/svg/asset-shopee.svg';
 import AssetWhatsapp from '@/assets/svg/asset-whatsapp.svg';
 import { AccordionDemo } from '@/components/partials/Accordion/Accordion';
 import { CarouselTesti } from '@/components/partials/CarouselTesti/CarouselTesti';
+import PromoSection from '@/components/layouts/Section/PromoSection';
 
 export default function Home() {
   return (
@@ -32,6 +33,10 @@ export default function Home() {
           </Link>
         </div>
       </header>
+
+      <section className="py-8">
+        <PromoSection id="discount-medan" waLink="https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%mengetahui%20lebih%banyak%20mengenai%20diskon%20ini"/>
+      </section>
 
       {/* Brand Partners */}
       <section className="py-2 ">

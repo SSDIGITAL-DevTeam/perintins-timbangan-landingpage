@@ -22,11 +22,17 @@ import FeatureList from '@/components/partials/FeatureList/FeatureList';
 import DialogDiscount from '@/components/partials/Dialog/DialogDiscount';
 import BannerPromoMobile from '@/assets/webp/asset-discount-2025-banner-mobile.webp';
 import BannerPromo from '@/assets/webp/asset-discount-2025-banner.webp';
+import { Button } from '@/components/ui/button';
+import WhatsappStroke from '@/assets/svg/asset-whatsapp-stroke.svg'
+import PromoSection from '@/components/layouts/Section/PromoSection';
+
 
 export default function Home() {
+  const id = "discount-medan"
+  const waLink = "https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%mengetahui%20lebih%banyak%20mengenai%20diskon%20ini"
   return (
     <main>
-      <DialogDiscount id="discount-medan" waLink="https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%mengetahui%20lebih%banyak%20mengenai%20diskon%20ini" />
+      <DialogDiscount id={id} waLink={waLink} />
       {/* Header */}
       <header className='relative flex flex-col bg-[url("/webp/asset-bg-hero.webp")] bg-cover bg-center bg-no-repeat min-h-[60vh] lg:min-h-screen justify-center items-center overflow-x-hidden'>
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/90 to-transparent opacity-90"></div>
@@ -41,7 +47,7 @@ export default function Home() {
         </div>
       </header>
 
-    {/* Promo Image */}
+      {/* Promo Image */}
       {/* <section className="py-2 flex flex-col gap-y-6">
         <h1 className="text-xl xl:text-3xl font-bold text-center mt-9">Merk ternama kualitas terjamin</h1>
         <div className="my-8 flex gap-4 overflow-x-auto lg:my-10">
@@ -50,23 +56,7 @@ export default function Home() {
       </section> */}
 
       <section className="py-8">
-        <div className="container p-4 md:p-8">
-          <Image
-            // radius="sm"
-            src={BannerPromo.src}
-            height={1080}
-            width={1920}
-            alt="Promo Banner"
-            className="w-full items-center justify-center md:flex hidden rounded-md"
-          />
-          <Image
-            src={BannerPromoMobile.src}
-            height={1080}
-            width={1920}
-            alt="Promo Banner"
-            className="w-full items-center justify-center flex md:hidden rounded-md"
-          />
-        </div>
+        <PromoSection id={id} waLink={waLink}/>
       </section>
 
       {/* Brand Partners */}
