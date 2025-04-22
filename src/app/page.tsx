@@ -29,7 +29,9 @@ import PromoSection from '@/components/layouts/Section/PromoSection';
 
 export default function Home() {
   const id = "discount-medan"
-  const waLink = "https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%mengetahui%20lebih%banyak%20mengenai%20diskon%20ini"
+  const message = "Halo Perintis Timbangan Medan, saya ingin mengetahui lebih banyak mengenai diskon ini";
+  const waLink = `https://api.whatsapp.com/send/?phone=6282166165351&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
+
   return (
     <main>
       <DialogDiscount id={id} waLink={waLink} />
@@ -56,7 +58,7 @@ export default function Home() {
       </section> */}
 
       <section className="py-8">
-        <PromoSection id={id} waLink={waLink}/>
+        <PromoSection id={id} waLink={waLink} />
       </section>
 
       {/* Brand Partners */}

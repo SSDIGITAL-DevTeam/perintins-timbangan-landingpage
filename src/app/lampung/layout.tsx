@@ -16,10 +16,13 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
+  const message = "Halo Perintis Timbangan Lampung, saya ingin mengetahui lebih banyak mengenai diskon ini";
+  const waLink = `https://api.whatsapp.com/send/?phone=628116023399&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
+
   return (
     <>
       <Whatsapp id="whatsapp-lampung" waLink="https://wa.me/628116023399?text=Halo%20Perintis%20Timbangan%20Lampung,%20saya%20ingin%20konsultasi%20produk" />
-      <DialogDiscount id="discount-lampung" waLink="https://wa.me/628116023399?text=Halo%20Perintis%20Timbangan%20Lampung,%20saya%20ingin%mengetahui%20lebih%banyak%20mengenai%20diskon%20ini"/>
+      <DialogDiscount id="discount-lampung" waLink={waLink} />
       {children}
     </>
   );

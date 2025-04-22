@@ -21,6 +21,9 @@ import { DealerGallery } from "@/components/Gallery/DealerGallery";
 import PromoSection from "@/components/layouts/Section/PromoSection";
 
 export default function Home() {
+  const message = "Halo Perintis Timbangan Aceh, saya ingin mengetahui lebih banyak mengenai diskon ini";
+const waLink = `https://api.whatsapp.com/send/?phone=628116381298&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
+
   return (
     <main>
       {/* Header */}
@@ -47,7 +50,7 @@ export default function Home() {
       </header>
 
       <section className="py-8">
-              <PromoSection id="discount-aceh" waLink="https://wa.me/628116381298?text=Halo%20Perintis%20Timbangan%20Aceh,%20saya%20ingin%mengetahui%20lebih%banyak%20mengenai%20diskon%20ini"/>
+              <PromoSection id="discount-aceh" waLink={waLink}/>
             </section>
 
       {/* Brand Partners */}
