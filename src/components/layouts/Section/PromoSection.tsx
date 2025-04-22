@@ -12,6 +12,7 @@ const WaRedStroke = (
 
 )
 
+
 export default function PromoSection({ id, waLink }: { id: string, waLink: string }) {
     return (
         <div className='container p-4 md:p-8 relative'>

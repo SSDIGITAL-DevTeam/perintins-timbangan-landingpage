@@ -67,10 +67,6 @@ export default function DialogDiscount({ waLink, id }: { waLink: string, id: str
                             Hubungi Kami
                         </Button>
                     </Link>
-
-
-
-
                 </div>
             </DialogContent>
         </Dialog>
