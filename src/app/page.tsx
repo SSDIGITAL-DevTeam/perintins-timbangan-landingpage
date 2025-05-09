@@ -8,7 +8,7 @@ import AssetGearKey from '@/assets/svg/asset-gear-key.svg';
 import AssetGear from '@/assets/svg/asset-gear.svg';
 import AssetComputer from '@/assets/svg/asset-computer.svg';
 import AssetShield from '@/assets/svg/asset-shield.svg';
-import AssetTimbanganPegas from '@/assets/webp/asset-timbangan-pegas.webp';
+// import AssetTimbanganPegas from '@/assets/webp/asset-timbangan-pegas.webp';
 import AssetSertifikat from '@/assets/webp/asset-sertifikat.webp';
 import AssetSertifikat1 from '@/assets/webp/asset-sertifikat-1.webp';
 import AssetSertifikat2 from '@/assets/webp/asset-sertifikat-2.webp';
@@ -20,11 +20,11 @@ import { CarouselTesti } from '@/components/partials/CarouselTesti/CarouselTesti
 import PelayananSection from '@/components/partials/PelayananSection/PelayananSection';
 import FeatureList from '@/components/partials/FeatureList/FeatureList';
 import DialogDiscount from '@/components/partials/Dialog/DialogDiscount';
-import BannerPromoMobile from '@/assets/webp/asset-discount-2025-banner-mobile.webp';
-import BannerPromo from '@/assets/webp/asset-discount-2025-banner.webp';
-import { Button } from '@/components/ui/button';
-import WhatsappStroke from '@/assets/svg/asset-whatsapp-stroke.svg'
-import PromoSection from '@/components/layouts/Section/PromoSection';
+// import BannerPromoMobile from '@/assets/webp/asset-discount-2025-banner-mobile.webp';
+// import BannerPromo from '@/assets/webp/asset-discount-2025-banner.webp';
+// import { Button } from '@/components/ui/button';
+// import WhatsappStroke from '@/assets/svg/asset-whatsapp-stroke.svg'
+// import PromoSection from '@/components/layouts/Section/PromoSection';
 import BannerCarousel from '@/components/partials/Carousel/BannerCarousel';
 import { carouselBanner } from '@/constant/banner';
 
