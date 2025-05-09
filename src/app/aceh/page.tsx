@@ -19,10 +19,15 @@ import PelayananSection from "@/components/partials/PelayananSection/PelayananSe
 import FeatureList from "@/components/partials/FeatureList/FeatureList";
 import { DealerGallery } from "@/components/Gallery/DealerGallery";
 import PromoSection from "@/components/layouts/Section/PromoSection";
+import BannerCarousel from "@/components/partials/Carousel/BannerCarousel";
+import { generateBanner } from "@/constant/banner";
+import { generateWaLink } from "@/constant/popup";
 
 export default function Home() {
-  const message = "Halo Perintis Timbangan Aceh, saya ingin mengetahui lebih banyak mengenai diskon ini";
-const waLink = `https://api.whatsapp.com/send/?phone=628116381298&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
+  // const message = "Halo Perintis Timbangan Aceh, saya ingin mengetahui lebih banyak mengenai diskon ini";
+  // const waLink = `https://api.whatsapp.com/send/?phone=628116381298&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
+  const id = "discount-aceh";
+  const waLink = generateWaLink("Aceh", 628116381298);
 
   return (
     <main>
@@ -49,9 +54,17 @@ const waLink = `https://api.whatsapp.com/send/?phone=628116381298&text=${encodeU
         </div>
       </header>
 
-      <section className="py-8">
+      {/* <section className="py-8">
               <PromoSection id="discount-aceh" waLink={waLink}/>
-            </section>
+            </section> */}
+      <section className="py-8">
+        <div className="w-full p-8 hidden md:block">
+          <BannerCarousel id={id} imgs={generateBanner(waLink).slice(0, 3)} />
+        </div>
+        <div className="container p-4 md:hidden block">
+          <BannerCarousel id={id} imgs={generateBanner(waLink).slice(3, 6)} />
+        </div>
+      </section>
 
       {/* Brand Partners */}
       <section className="py-2 flex flex-col gap-y-6">

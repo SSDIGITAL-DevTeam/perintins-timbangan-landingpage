@@ -11,7 +11,9 @@ export type Img = {
   path: string;
   link?: Url;
 };
-export const carouselBanner: Img[] = [
+
+export const generateBanner = (waLink: string) : Img[] => {
+  return  [
     {
       path: CarouselBanner1.src,
       link: `${baseUrl}/produk?page=1&category=Comanche%2CKinlee%2CBarokah`
@@ -22,7 +24,7 @@ export const carouselBanner: Img[] = [
     },
     {
       path: CarouselBanner3.src,
-      link: "https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%20mengetahui%20lebih%20banyak%20mengenai%20diskon%20toko%202025%20ini"
+      link: waLink
     },
     {
       path: CarouselBanner4.src,
@@ -34,6 +36,7 @@ export const carouselBanner: Img[] = [
     },
     {
       path: CarouselBanner6.src,
-      link: "https://wa.me/6282166165351?text=Halo%20Perintis%20Timbangan%20Medan,%20saya%20ingin%20mengetahui%20lebih%20banyak%20mengenai%20diskon%20toko%202025%20ini"
+      link: waLink
     },
   ];
+}

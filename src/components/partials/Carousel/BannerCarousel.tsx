@@ -16,7 +16,7 @@ import Image from "next/image";
 // Register Swiper
 register();
 
-export default function BannerCarousel({ imgs }: { imgs: Img[] }): JSX.Element {
+export default function BannerCarousel({ imgs, id }: { imgs: Img[], id:string }): JSX.Element {
     const prevRef = useRef<HTMLButtonElement>(null);
     const nextRef = useRef<HTMLButtonElement>(null);
     const swiperRef = useRef<any>(null);
@@ -50,6 +50,7 @@ export default function BannerCarousel({ imgs }: { imgs: Img[] }): JSX.Element {
                         >
                             <Link href={img.link || ""} target="_blank" rel="noopener noreferrer">
                                 <Image
+                                    id={id}
                                     width={1920}
                                     height={1080}
                                     src={img.path}
