@@ -33,3 +33,33 @@
     scrollbar-color: #b10903 #e2e8f0;
   }
 }
+.container-medium {
+  position: relative;
+}
+
+.medium-container {
+  width: 82%;
+  margin: 0 auto;
+}
+.container-medium .arrow {
+  position: absolute;
+  top: 45%;
+}
+
+.container-medium .arrow.arrow-left {
+  left: 3%;
+}
+
+.container-medium .arrow.arrow-right {
+  right: 3%;
+}
+
+@media screen and (max-width: 600px) {
+  .medium-container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .arrow {
+    display: none;
+  }
+}

@@ -25,6 +25,8 @@ import BannerPromo from '@/assets/webp/asset-discount-2025-banner.webp';
 import { Button } from '@/components/ui/button';
 import WhatsappStroke from '@/assets/svg/asset-whatsapp-stroke.svg'
 import PromoSection from '@/components/layouts/Section/PromoSection';
+import BannerCarousel from '@/components/partials/Carousel/BannerCarousel';
+import { carouselBanner } from '@/constant/banner';
 
 
 export default function Home() {
@@ -57,8 +59,16 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="py-8">
+      {/* <section className="py-8">
         <PromoSection id={id} waLink={waLink} />
+      </section> */}
+      <section className="py-8">
+        <div className="w-full p-8 hidden md:block">
+          <BannerCarousel imgs={carouselBanner.slice(0, 3)}/>
+        </div>
+        <div className="container p-4 md:hidden block">
+          <BannerCarousel imgs={carouselBanner.slice(3, 6)}/>
+        </div>
       </section>
 
       {/* Brand Partners */}
