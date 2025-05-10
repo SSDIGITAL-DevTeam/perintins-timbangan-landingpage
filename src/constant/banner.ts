@@ -16,11 +16,11 @@ export const generateBanner = (waLink: string) : Img[] => {
   return  [
     {
       path: CarouselBanner1.src,
-      link: `${baseUrl}/produk?page=1&category=Comanche%2CKinlee%2CBarokah`
+      link: `${baseUrl}/produk?category=promo-mei-nyala&page=1`
     },
     {
       path: CarouselBanner2.src,
-      link: `${baseUrl}/produk?page=1&category=Timbangan+Meja%2CTimbangan+Lab`
+      link: `${baseUrl}/produk?category=promo-meiriah&page=1`
     },
     {
       path: CarouselBanner3.src,
@@ -28,11 +28,11 @@ export const generateBanner = (waLink: string) : Img[] => {
     },
     {
       path: CarouselBanner4.src,
-      link: `${baseUrl}/produk?page=1&category=Comanche%2CKinlee%2CBarokah`
+      link: `${baseUrl}/produk?category=promo-mei-nyala&page=1`
     },
     {
       path: CarouselBanner5.src,
-      link: `${baseUrl}/produk?page=1&category=Timbangan+Meja%2CTimbangan+Lab`
+      link: `${baseUrl}/produk?category=promo-meiriah&page=1`
     },
     {
       path: CarouselBanner6.src,
