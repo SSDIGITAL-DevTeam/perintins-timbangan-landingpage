@@ -15,7 +15,7 @@ import AssetShopee from '@/assets/svg/asset-shopee.svg';
 import AssetWhatsapp from '@/assets/svg/asset-whatsapp.svg';
 import { AccordionDemo } from '@/components/partials/Accordion/Accordion';
 import { CarouselTesti } from '@/components/partials/CarouselTesti/CarouselTesti';
-import PromoSection from '@/components/layouts/Section/PromoSection';
+// import PromoSection from '@/components/layouts/Section/PromoSection';
 import BannerCarousel from '@/components/partials/Carousel/BannerCarousel';
 import { generateBanner } from '@/constant/banner';
 import { generateWaLink } from '@/constant/popup';

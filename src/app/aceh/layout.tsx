@@ -1,5 +1,6 @@
 import DialogDiscount from "@/components/partials/Dialog/DialogDiscount";
 import Whatsapp from "@/components/partials/Whatsapp/Whatsapp";
+import { generateWaLink } from "@/constant/popup";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -17,8 +18,9 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const message = "Halo Perintis Timbangan Aceh, saya ingin mengetahui lebih banyak mengenai diskon ini";
-const waLink = `https://api.whatsapp.com/send/?phone=628116381298&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
+// const waLink = `https://api.whatsapp.com/send/?phone=628116381298&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
 
+const waLink = generateWaLink("Aceh", 628116381298);
   return (
     <>
       <Whatsapp

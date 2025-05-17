@@ -19,7 +19,7 @@ import Products from "@/components/partials/Product/Products";
 import PelayananSection from "@/components/partials/PelayananSection/PelayananSection";
 import FeatureList from "@/components/partials/FeatureList/FeatureList";
 import { DealerGallery } from "@/components/Gallery/DealerGallery";
-import PromoSection from "@/components/layouts/Section/PromoSection";
+// import PromoSection from "@/components/layouts/Section/PromoSection";
 import BannerCarousel from "@/components/partials/Carousel/BannerCarousel";
 import { generateBanner } from "@/constant/banner";
 import { generateWaLink } from "@/constant/popup";
