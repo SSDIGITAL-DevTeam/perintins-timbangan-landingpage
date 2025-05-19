@@ -24,9 +24,9 @@ import DialogDiscount from '@/components/partials/Dialog/DialogDiscount';
 // import BannerPromo from '@/assets/webp/asset-discount-2025-banner.webp';
 // import { Button } from '@/components/ui/button';
 // import WhatsappStroke from '@/assets/svg/asset-whatsapp-stroke.svg'
-// import PromoSection from '@/components/layouts/Section/PromoSection';
-import BannerCarousel from '@/components/partials/Carousel/BannerCarousel';
-import { generateBanner } from '@/constant/banner';
+import PromoSection from '@/components/layouts/Section/PromoSection';
+// import BannerCarousel from '@/components/partials/Carousel/BannerCarousel';
+// import { generateBanner } from '@/constant/banner';
 import { generateWaLink } from '@/constant/popup';
 
 
@@ -51,16 +51,20 @@ export default function Home() {
         </div>
       </header>
 
-      {/* <section className="py-8">
-        <PromoSection id={id} waLink={waLink} />
-      </section> */}
       <section className="py-8">
+        <PromoSection id={id}/>
+      </section>
+      {/* <section className="py-8">
         <div className="w-full p-8 hidden md:block">
           <BannerCarousel id={id} imgs={generateBanner(waLink).slice(0, 3)}/>
         </div>
         <div className="container p-4 md:hidden block">
           <BannerCarousel id={id} imgs={generateBanner(waLink).slice(3, 6)}/>
         </div>
+      </section> */}
+
+      <section className="py-8">
+       
       </section>
 
       {/* Brand Partners */}
