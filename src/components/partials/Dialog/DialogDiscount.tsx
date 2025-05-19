@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+// import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import {
@@ -13,9 +13,9 @@ import WhatsappStroke from '@/assets/svg/asset-whatsapp-stroke.svg'
 import { FaWhatsapp } from "react-icons/fa6"
 
 export default function DialogDiscount({ waLink, id }: { waLink: string, id: string }) {
-    const [isOpen, setIsOpen] = useState<boolean>(true);
+    // const [isOpen, setIsOpen] = useState<boolean>(true);
     return (
-        <Dialog defaultOpen={true} open={isOpen} onOpenChange={setIsOpen}>
+        <Dialog defaultOpen={true}>
             <DialogContent className="md:overflow-hidden w-[70%] h-[50vh] sm:w-[50%] md:w-fit md:h-fit gap-0 md:gap-4 justify-start">
                 <DialogTitle className="hidden">Promo Dialog</DialogTitle>
 
@@ -68,7 +68,7 @@ export default function DialogDiscount({ waLink, id }: { waLink: string, id: str
                                 </Button>
 
                             </Link>
-                            <Link
+                            {/* <Link
                                 id={id + 1}
                                 href={waLink}
                                 target="_blank"
@@ -78,7 +78,7 @@ export default function DialogDiscount({ waLink, id }: { waLink: string, id: str
                                 <Button className="w-full rounded-full py-2 px-2 sm:px-5 lg:py-3  text-xs sm:text-sm font-semibold tracking-[1px] bg-white hover:bg-red-50 active:bg-red-800 border-[1px] border-red-800 text-red-800 active:text-white flex items-center gap-2">
                                     <FaWhatsapp className="w-3 h-3" /> Klaim Promonya Sekarang Yuk!
                                 </Button>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>
@@ -127,11 +127,11 @@ export default function DialogDiscount({ waLink, id }: { waLink: string, id: str
                                 href={"https://www.perintistimbanganindonesia.co.id/promo"}
                                 className="w-full flex justify-center"
                             >
-                                <Button className="relative w-full rounded-full py-2 px-5 lg:py-3 text-sm lg:text-base font-semibold tracking-[1px] bg-red-600 hover:bg-red-800 active:bg-red-800 text-white overflow-hidden before:content-[''] before:absolute before:inset-0 before:rounded-full before:shadow-[inset_0_4px_6px_rgba(255,255,255,0.35),inset_0_-4px_6px_rgba(0,0,0,0.35)] before:pointer-events-none">
+                                <Button className="relative w-full rounded-full py-2 px-5 lg:py-3 text-base lg:text-lg font-bold tracking-[1px] bg-red-600 hover:bg-red-800 active:bg-red-800 text-white overflow-hidden before:content-[''] before:absolute before:inset-0 before:rounded-full before:shadow-[inset_0_4px_6px_rgba(255,255,255,0.35),inset_0_-4px_6px_rgba(0,0,0,0.35)] before:pointer-events-none">
                                     Klik Disini Untuk Melihat Promo!
                                 </Button>
                             </Link>
-                            <Link
+                            {/* <Link
                                 id={id + 1}
                                 href={waLink}
                                 target="_blank"
@@ -141,7 +141,7 @@ export default function DialogDiscount({ waLink, id }: { waLink: string, id: str
                                 <Button className="w-full rounded-full py-2 px-5 lg:py-3 text-sm lg:text-base font-semibold tracking-[1px] bg-white hover:bg-red-50 active:bg-red-800 border-[1px] border-red-800 text-red-800 active:text-white flex items-center gap-4">
                                     <FaWhatsapp className="w-5 h-5" /> Klaim Promonya Sekarang Yuk!
                                 </Button>
-                            </Link>
+                            </Link> */}
 
                         </div>
                     </div>
