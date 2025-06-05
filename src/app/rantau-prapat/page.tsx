@@ -19,10 +19,11 @@ import Products from "@/components/partials/Product/Products";
 import PelayananSection from "@/components/partials/PelayananSection/PelayananSection";
 import FeatureList from "@/components/partials/FeatureList/FeatureList";
 import { DealerGallery } from "@/components/Gallery/DealerGallery";
-import PromoSection from "@/components/layouts/Section/PromoSection";
+import PromoBanner from "@/components/layouts/Section/PromoSection";
 // import BannerCarousel from "@/components/partials/Carousel/BannerCarousel";
 // import { generateBanner } from "@/constant/banner";
 import { generateWaLink } from "@/constant/popup";
+// import PromoSection from "./_components/PromoSection";
 
 export default function Home() {
   // const message = "Halo Perintis Timbangan Rantau Prapat, saya ingin mengetahui lebih banyak mengenai diskon ini";
@@ -54,9 +55,12 @@ export default function Home() {
         </div>
       </header>
 
-     <section className="py-8">
-             <PromoSection id={id}/>
-           </section>
+      <section className="py-8">
+        <PromoBanner id={id} />
+      </section>
+      {/* <section className="py-8">
+        <PromoSection />
+      </section> */}
       {/* <section className="py-8">
         <div className="w-full p-8 hidden md:block">
           <BannerCarousel id={id} imgs={generateBanner(waLink).slice(0, 3)} />
