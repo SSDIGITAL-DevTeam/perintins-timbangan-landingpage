@@ -1,6 +1,6 @@
 import Image from "next/image";
-import PromoImage from "@/assets/webp/carousel-banner/asset-promo-jumbo.webp"
-import PromoImageMobile from "@/assets/webp/carousel-banner/asset-promo-jumbo-mobile.webp";
+import PromoImage from "@/assets/webp/asset-discount-2025-banner.webp"
+import PromoImageMobile from "@/assets/webp/asset-discount-2025-banner-mobile.webp";
 import Link from "next/link";
 
 
