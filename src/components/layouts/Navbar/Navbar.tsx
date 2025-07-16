@@ -7,10 +7,45 @@ import Logo from '@/assets/svg/logo.svg';
 import { useMediaQuery } from 'usehooks-ts';
 
 const Navbar: React.FC = () => {
-  const [showButton, setShowButton] = useState<boolean>(false);
-  const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
-  const [isVisible, setIsVisible] = useState<boolean>(true);
+  // const [showButton, setShowButton] = useState<boolean>(false);
+  // const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  // const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
+  // const [isVisible, setIsVisible] = useState<boolean>(true);
+  // const isMobile = useMediaQuery('(max-width: 768px)');
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollPos = window.pageYOffset;
+
+  //     if (currentScrollPos > 500) {
+  //       setShowButton(true);
+  //       setIsScrolled(true);
+  //     } else {
+  //       setShowButton(false);
+  //       setIsScrolled(false);
+  //     }
+
+  //     setIsVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+  //     setPrevScrollPos(currentScrollPos);
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [prevScrollPos]);
+
+  const [showButton, setShowButton] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   useEffect(() => {
@@ -30,11 +65,10 @@ const Navbar: React.FC = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
+
+  if (!hasMounted) return null;
 
   return (
     <nav className={`bg-background p-4 md:p-4 sticky top-0 z-50 shadow-sm transition-transform duration-300 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>

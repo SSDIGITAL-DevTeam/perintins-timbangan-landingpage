@@ -19,7 +19,7 @@ import AssetWhatsapp from '@/assets/svg/asset-whatsapp.svg';
 import { CarouselTesti } from '@/components/partials/CarouselTesti/CarouselTesti';
 import PelayananSection from '@/components/partials/PelayananSection/PelayananSection';
 import FeatureList from '@/components/partials/FeatureList/FeatureList';
-import DialogDiscount from '@/components/partials/Dialog/DialogPromoToko';
+import DialogDiscount from '@/components/partials/Dialog/DialogToko';
 // import BannerPromoMobile from '@/assets/webp/asset-discount-2025-banner-mobile.webp';
 // import BannerPromo from '@/assets/webp/asset-discount-2025-banner.webp';
 // import { Button } from '@/components/ui/button';

@@ -1,4 +1,4 @@
-import DialogDiscount from '@/components/partials/Dialog/DialogPromoToko';
+import DialogDiscount from '@/components/partials/Dialog/DialogToko';
 import Whatsapp from '@/components/partials/Whatsapp/Whatsapp';
 import { generateWaLink } from '@/constant/popup';
 import type { Metadata } from 'next';
