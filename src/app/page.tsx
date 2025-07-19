@@ -20,13 +20,7 @@ import { CarouselTesti } from '@/components/partials/CarouselTesti/CarouselTesti
 import PelayananSection from '@/components/partials/PelayananSection/PelayananSection';
 import FeatureList from '@/components/partials/FeatureList/FeatureList';
 import DialogDiscount from '@/components/partials/Dialog/DialogToko';
-// import BannerPromoMobile from '@/assets/webp/asset-discount-2025-banner-mobile.webp';
-// import BannerPromo from '@/assets/webp/asset-discount-2025-banner.webp';
-// import { Button } from '@/components/ui/button';
-// import WhatsappStroke from '@/assets/svg/asset-whatsapp-stroke.svg'
 import PromoSection from '@/components/layouts/Section/PromoSection';
-// import BannerCarousel from '@/components/partials/Carousel/BannerCarousel';
-// import { generateBanner } from '@/constant/banner';
 import { generateWaLink } from '@/constant/popup';
 
 
@@ -54,18 +48,6 @@ export default function Home() {
       <section className="py-8">
         <PromoSection id={id}/>
       </section>
-      {/* <section className="py-8">
-        <div className="w-full p-8 hidden md:block">
-          <BannerCarousel id={id} imgs={generateBanner(waLink).slice(0, 3)}/>
-        </div>
-        <div className="container p-4 md:hidden block">
-          <BannerCarousel id={id} imgs={generateBanner(waLink).slice(3, 6)}/>
-        </div>
-      </section> */}
-
-      {/* <section className="py-8">
-       
-      </section> */}
 
       {/* Brand Partners */}
       <section className="py-2 flex flex-col gap-y-6">
